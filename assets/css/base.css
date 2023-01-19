@@ -1,0 +1,54 @@
+:root {
+    --white-color: #ffffff;
+    --color-text-black: #333;
+    --color-text: #7a7a7a;
+    --color-text-primary: #c19b77;
+    --color-primary: #151516;
+    --color-secondary: #54595f;
+}
+
+::selection {
+    background-color: #ff770f; 
+    color: var(--white-color);
+}
+::-moz-selection {
+    background-color: #ff770f; 
+    color: var(--white-color);
+}
+::-webkit-selection {
+    background-color: #ff770f; 
+    color: var(--white-color);
+}
+
+/* PRIMARY BUTTON */
+.btn-link {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--white-color);
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: none;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+}
+
+.btn-primary:hover {
+    color: var(--white-color);
+    background-color: #ff770f;
+    transform: translateY(3px);
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+}
+
+/* ANIMATION */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+} 
